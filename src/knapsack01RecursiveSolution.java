@@ -4,8 +4,11 @@ public class knapsack01RecursiveSolution {
         if(n==0||W==0){
             return 0;
         }
-        else{
+        else if(w[n] <= W) {
             return Math.max(v[n]+knapsack(w,v,n-1,W-w[n]),knapsack(w,v,n-1,W));
+        }
+        else{
+            return knapsack(w,v,n-1,W);
         }
 
     }
