@@ -18,6 +18,6 @@ public class knapsack01RecursiveSolution {
         int n=weight.length;
         int W=7;
 
-        System.out.println("0/1 knapsack solution : " + knapsack(weight,value,n-1,7));
+        System.out.println("0/1 knapsack solution : " + knapsack(weight,value,n-1,W));
     }
 }
