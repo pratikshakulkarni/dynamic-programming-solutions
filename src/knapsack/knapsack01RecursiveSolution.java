@@ -1,3 +1,5 @@
+package knapsack;
+
 public class knapsack01RecursiveSolution {
     private static int knapsack(int w[], int v[], int n, int W){
 
