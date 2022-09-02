@@ -19,6 +19,8 @@ public class SubsetSumMemoization {
         int sum = 38;
         int n = arr.length;
         boolean[][] dp = new boolean[arr.length+1][sum+1];
+        for (int j=0; j< sum+1;j++)
+            dp[0][j]=false;
         for (int i=0; i< arr.length+1;i++)
             dp[i][0]=true;
         for (int j=0; j< sum+1;j++)
